@@ -71,5 +71,5 @@ exclude_generator:
 # Deployment
 deploy:
   type: github
-  repository: https://github.com/dmmo/dmmo.github.io.git
+  repository: https://github.com/dmmo/dmmo.github.io
   branch: master
