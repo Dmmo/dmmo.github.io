@@ -1,1 +1,22 @@
-say hello dmoo.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dmoo...</title>
+</head>
+<body>
+    <div id="content" style="display: none;">
+# hello world.
+    </div>
+    <script src="http://cdn.bootcss.com/marked/0.3.6/marked.min.js"></script>
+    <script>
+        var content = document.getElementById('content'),
+            html = marked(content.innerHTML);
+            console.log(html);
+            content.innerHTML = html;
+            content.setAttribute('style', 'display: initial;')
+    </script>
+</body>
+</html>
