@@ -3,6 +3,8 @@ const program   = require('commander'),
         color   = require('colors-cli'),
         build   = require('./plugin/build.js');
 
+//TODO: gulp-swig gulp-front-matter    
+
 const   err   = function(str){
             return color.bold(color.red(str));
         },
