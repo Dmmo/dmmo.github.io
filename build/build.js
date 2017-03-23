@@ -8,6 +8,6 @@ fs.readdir(markdown, function(err, files){
         var md = fs.readFileSync(path.join(markdown, item)).toString();
         var tpl = fs.readFileSync('template.html').toString();
         var html = tpl.replace('%markdown%', md);
-        fs.writeFileSync(item.replace('md', 'html'), html, {encoding: 'utf-8'});
+        fs.writeFileSync(item.replace('md', 'html'), html, {encoding: 'utf-8', flag: 'w+'});
     });
 });
