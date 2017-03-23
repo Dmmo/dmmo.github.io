@@ -1,0 +1,24 @@
+{
+  "name": "dmmo.github.io",
+  "version": "1.0.0",
+  "description": "支持markdown的静态博客",
+  "main": "build/build.js",
+  "scripts": {
+    "test": "npm build",
+    "build": "node build/build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dmmo/dmmo.github.io.git"
+  },
+  "keywords": [
+    "markdown",
+    "静态博客"
+  ],
+  "author": "dm",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Dmmo/dmmo.github.io/issues"
+  },
+  "homepage": "https://github.com/Dmmo/dmmo.github.io#readme"
+}
