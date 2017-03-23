@@ -3,9 +3,13 @@
   "version": "1.0.0",
   "description": "支持markdown的静态博客",
   "main": "build/build.js",
+  "bin": {
+    "kujs": "./core/ku.js"
+  },
   "scripts": {
     "test": "npm build",
-    "build": "node build/build.js"
+    "build": "node build/build.js",
+    "dev": "gulp dev"
   },
   "repository": {
     "type": "git",
@@ -20,5 +24,13 @@
   "bugs": {
     "url": "https://github.com/Dmmo/dmmo.github.io/issues"
   },
-  "homepage": "https://github.com/Dmmo/dmmo.github.io#readme"
+  "homepage": "https://github.com/Dmmo/dmmo.github.io#readme",
+  "devDependencies": {
+    "colors-cli": "^1.0.7",
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0"
+  },
+  "dependencies": {
+    "commander": "^2.9.0"
+  }
 }
